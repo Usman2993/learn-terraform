@@ -1,0 +1,4362 @@
+{
+  "instances_info": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        [
+          "object",
+          {
+            "ami": "string",
+            "arn": "string",
+            "associate_public_ip_address": "bool",
+            "availability_zone": "string",
+            "capacity_reservation_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "capacity_reservation_preference": "string",
+                  "capacity_reservation_target": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "capacity_reservation_id": "string",
+                        "capacity_reservation_resource_group_arn": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "cpu_options": [
+              "list",
+              [
+                "object",
+                {
+                  "amd_sev_snp": "string",
+                  "core_count": "number",
+                  "nested_virtualization": "string",
+                  "threads_per_core": "number"
+                }
+              ]
+            ],
+            "credit_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "cpu_credits": "string"
+                }
+              ]
+            ],
+            "disable_api_stop": "bool",
+            "disable_api_termination": "bool",
+            "ebs_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "snapshot_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "ebs_optimized": "bool",
+            "enable_primary_ipv6": "bool",
+            "enclave_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enabled": "bool"
+                }
+              ]
+            ],
+            "ephemeral_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "device_name": "string",
+                  "no_device": "bool",
+                  "virtual_name": "string"
+                }
+              ]
+            ],
+            "force_destroy": "bool",
+            "get_password_data": "bool",
+            "hibernation": "bool",
+            "host_id": "string",
+            "host_resource_group_arn": "string",
+            "iam_instance_profile": "string",
+            "id": "string",
+            "instance_initiated_shutdown_behavior": "string",
+            "instance_lifecycle": "string",
+            "instance_market_options": [
+              "list",
+              [
+                "object",
+                {
+                  "market_type": "string",
+                  "spot_options": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "instance_interruption_behavior": "string",
+                        "max_price": "string",
+                        "spot_instance_type": "string",
+                        "valid_until": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "instance_state": "string",
+            "instance_type": "string",
+            "ipv6_address_count": "number",
+            "ipv6_addresses": [
+              "list",
+              "string"
+            ],
+            "key_name": "string",
+            "launch_template": [
+              "list",
+              [
+                "object",
+                {
+                  "id": "string",
+                  "name": "string",
+                  "version": "string"
+                }
+              ]
+            ],
+            "maintenance_options": [
+              "list",
+              [
+                "object",
+                {
+                  "auto_recovery": "string"
+                }
+              ]
+            ],
+            "metadata_options": [
+              "list",
+              [
+                "object",
+                {
+                  "http_endpoint": "string",
+                  "http_protocol_ipv6": "string",
+                  "http_put_response_hop_limit": "number",
+                  "http_tokens": "string",
+                  "instance_metadata_tags": "string"
+                }
+              ]
+            ],
+            "monitoring": "bool",
+            "network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "network_card_index": "number",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "outpost_arn": "string",
+            "password_data": "string",
+            "placement_group": "string",
+            "placement_group_id": "string",
+            "placement_partition_number": "number",
+            "primary_network_interface": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "primary_network_interface_id": "string",
+            "private_dns": "string",
+            "private_dns_name_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enable_resource_name_dns_a_record": "bool",
+                  "enable_resource_name_dns_aaaa_record": "bool",
+                  "hostname_type": "string"
+                }
+              ]
+            ],
+            "private_ip": "string",
+            "public_dns": "string",
+            "public_ip": "string",
+            "region": "string",
+            "root_block_device": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "secondary_network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "interface_type": "string",
+                  "mac_address": "string",
+                  "network_card_index": "number",
+                  "private_ip_address_count": "number",
+                  "private_ip_addresses": [
+                    "list",
+                    "string"
+                  ],
+                  "secondary_interface_id": "string",
+                  "secondary_network_id": "string",
+                  "secondary_subnet_id": "string",
+                  "source_dest_check": "bool",
+                  "status": "string"
+                }
+              ]
+            ],
+            "secondary_private_ips": [
+              "set",
+              "string"
+            ],
+            "security_groups": [
+              "set",
+              "string"
+            ],
+            "source_dest_check": "bool",
+            "spot_instance_request_id": "string",
+            "subnet_id": "string",
+            "tags": [
+              "map",
+              "string"
+            ],
+            "tags_all": [
+              "map",
+              "string"
+            ],
+            "tenancy": "string",
+            "timeouts": [
+              "object",
+              {
+                "create": "string",
+                "delete": "string",
+                "read": "string",
+                "update": "string"
+              }
+            ],
+            "user_data": "string",
+            "user_data_base64": "string",
+            "user_data_replace_on_change": "bool",
+            "volume_tags": [
+              "map",
+              "string"
+            ],
+            "vpc_security_group_ids": [
+              "set",
+              "string"
+            ]
+          }
+        ],
+        [
+          "object",
+          {
+            "ami": "string",
+            "arn": "string",
+            "associate_public_ip_address": "bool",
+            "availability_zone": "string",
+            "capacity_reservation_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "capacity_reservation_preference": "string",
+                  "capacity_reservation_target": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "capacity_reservation_id": "string",
+                        "capacity_reservation_resource_group_arn": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "cpu_options": [
+              "list",
+              [
+                "object",
+                {
+                  "amd_sev_snp": "string",
+                  "core_count": "number",
+                  "nested_virtualization": "string",
+                  "threads_per_core": "number"
+                }
+              ]
+            ],
+            "credit_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "cpu_credits": "string"
+                }
+              ]
+            ],
+            "disable_api_stop": "bool",
+            "disable_api_termination": "bool",
+            "ebs_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "snapshot_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "ebs_optimized": "bool",
+            "enable_primary_ipv6": "bool",
+            "enclave_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enabled": "bool"
+                }
+              ]
+            ],
+            "ephemeral_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "device_name": "string",
+                  "no_device": "bool",
+                  "virtual_name": "string"
+                }
+              ]
+            ],
+            "force_destroy": "bool",
+            "get_password_data": "bool",
+            "hibernation": "bool",
+            "host_id": "string",
+            "host_resource_group_arn": "string",
+            "iam_instance_profile": "string",
+            "id": "string",
+            "instance_initiated_shutdown_behavior": "string",
+            "instance_lifecycle": "string",
+            "instance_market_options": [
+              "list",
+              [
+                "object",
+                {
+                  "market_type": "string",
+                  "spot_options": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "instance_interruption_behavior": "string",
+                        "max_price": "string",
+                        "spot_instance_type": "string",
+                        "valid_until": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "instance_state": "string",
+            "instance_type": "string",
+            "ipv6_address_count": "number",
+            "ipv6_addresses": [
+              "list",
+              "string"
+            ],
+            "key_name": "string",
+            "launch_template": [
+              "list",
+              [
+                "object",
+                {
+                  "id": "string",
+                  "name": "string",
+                  "version": "string"
+                }
+              ]
+            ],
+            "maintenance_options": [
+              "list",
+              [
+                "object",
+                {
+                  "auto_recovery": "string"
+                }
+              ]
+            ],
+            "metadata_options": [
+              "list",
+              [
+                "object",
+                {
+                  "http_endpoint": "string",
+                  "http_protocol_ipv6": "string",
+                  "http_put_response_hop_limit": "number",
+                  "http_tokens": "string",
+                  "instance_metadata_tags": "string"
+                }
+              ]
+            ],
+            "monitoring": "bool",
+            "network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "network_card_index": "number",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "outpost_arn": "string",
+            "password_data": "string",
+            "placement_group": "string",
+            "placement_group_id": "string",
+            "placement_partition_number": "number",
+            "primary_network_interface": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "primary_network_interface_id": "string",
+            "private_dns": "string",
+            "private_dns_name_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enable_resource_name_dns_a_record": "bool",
+                  "enable_resource_name_dns_aaaa_record": "bool",
+                  "hostname_type": "string"
+                }
+              ]
+            ],
+            "private_ip": "string",
+            "public_dns": "string",
+            "public_ip": "string",
+            "region": "string",
+            "root_block_device": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "secondary_network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "interface_type": "string",
+                  "mac_address": "string",
+                  "network_card_index": "number",
+                  "private_ip_address_count": "number",
+                  "private_ip_addresses": [
+                    "list",
+                    "string"
+                  ],
+                  "secondary_interface_id": "string",
+                  "secondary_network_id": "string",
+                  "secondary_subnet_id": "string",
+                  "source_dest_check": "bool",
+                  "status": "string"
+                }
+              ]
+            ],
+            "secondary_private_ips": [
+              "set",
+              "string"
+            ],
+            "security_groups": [
+              "set",
+              "string"
+            ],
+            "source_dest_check": "bool",
+            "spot_instance_request_id": "string",
+            "subnet_id": "string",
+            "tags": [
+              "map",
+              "string"
+            ],
+            "tags_all": [
+              "map",
+              "string"
+            ],
+            "tenancy": "string",
+            "timeouts": [
+              "object",
+              {
+                "create": "string",
+                "delete": "string",
+                "read": "string",
+                "update": "string"
+              }
+            ],
+            "user_data": "string",
+            "user_data_base64": "string",
+            "user_data_replace_on_change": "bool",
+            "volume_tags": [
+              "map",
+              "string"
+            ],
+            "vpc_security_group_ids": [
+              "set",
+              "string"
+            ]
+          }
+        ],
+        [
+          "object",
+          {
+            "ami": "string",
+            "arn": "string",
+            "associate_public_ip_address": "bool",
+            "availability_zone": "string",
+            "capacity_reservation_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "capacity_reservation_preference": "string",
+                  "capacity_reservation_target": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "capacity_reservation_id": "string",
+                        "capacity_reservation_resource_group_arn": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "cpu_options": [
+              "list",
+              [
+                "object",
+                {
+                  "amd_sev_snp": "string",
+                  "core_count": "number",
+                  "nested_virtualization": "string",
+                  "threads_per_core": "number"
+                }
+              ]
+            ],
+            "credit_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "cpu_credits": "string"
+                }
+              ]
+            ],
+            "disable_api_stop": "bool",
+            "disable_api_termination": "bool",
+            "ebs_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "snapshot_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "ebs_optimized": "bool",
+            "enable_primary_ipv6": "bool",
+            "enclave_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enabled": "bool"
+                }
+              ]
+            ],
+            "ephemeral_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "device_name": "string",
+                  "no_device": "bool",
+                  "virtual_name": "string"
+                }
+              ]
+            ],
+            "force_destroy": "bool",
+            "get_password_data": "bool",
+            "hibernation": "bool",
+            "host_id": "string",
+            "host_resource_group_arn": "string",
+            "iam_instance_profile": "string",
+            "id": "string",
+            "instance_initiated_shutdown_behavior": "string",
+            "instance_lifecycle": "string",
+            "instance_market_options": [
+              "list",
+              [
+                "object",
+                {
+                  "market_type": "string",
+                  "spot_options": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "instance_interruption_behavior": "string",
+                        "max_price": "string",
+                        "spot_instance_type": "string",
+                        "valid_until": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "instance_state": "string",
+            "instance_type": "string",
+            "ipv6_address_count": "number",
+            "ipv6_addresses": [
+              "list",
+              "string"
+            ],
+            "key_name": "string",
+            "launch_template": [
+              "list",
+              [
+                "object",
+                {
+                  "id": "string",
+                  "name": "string",
+                  "version": "string"
+                }
+              ]
+            ],
+            "maintenance_options": [
+              "list",
+              [
+                "object",
+                {
+                  "auto_recovery": "string"
+                }
+              ]
+            ],
+            "metadata_options": [
+              "list",
+              [
+                "object",
+                {
+                  "http_endpoint": "string",
+                  "http_protocol_ipv6": "string",
+                  "http_put_response_hop_limit": "number",
+                  "http_tokens": "string",
+                  "instance_metadata_tags": "string"
+                }
+              ]
+            ],
+            "monitoring": "bool",
+            "network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "network_card_index": "number",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "outpost_arn": "string",
+            "password_data": "string",
+            "placement_group": "string",
+            "placement_group_id": "string",
+            "placement_partition_number": "number",
+            "primary_network_interface": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "primary_network_interface_id": "string",
+            "private_dns": "string",
+            "private_dns_name_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enable_resource_name_dns_a_record": "bool",
+                  "enable_resource_name_dns_aaaa_record": "bool",
+                  "hostname_type": "string"
+                }
+              ]
+            ],
+            "private_ip": "string",
+            "public_dns": "string",
+            "public_ip": "string",
+            "region": "string",
+            "root_block_device": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "secondary_network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "interface_type": "string",
+                  "mac_address": "string",
+                  "network_card_index": "number",
+                  "private_ip_address_count": "number",
+                  "private_ip_addresses": [
+                    "list",
+                    "string"
+                  ],
+                  "secondary_interface_id": "string",
+                  "secondary_network_id": "string",
+                  "secondary_subnet_id": "string",
+                  "source_dest_check": "bool",
+                  "status": "string"
+                }
+              ]
+            ],
+            "secondary_private_ips": [
+              "set",
+              "string"
+            ],
+            "security_groups": [
+              "set",
+              "string"
+            ],
+            "source_dest_check": "bool",
+            "spot_instance_request_id": "string",
+            "subnet_id": "string",
+            "tags": [
+              "map",
+              "string"
+            ],
+            "tags_all": [
+              "map",
+              "string"
+            ],
+            "tenancy": "string",
+            "timeouts": [
+              "object",
+              {
+                "create": "string",
+                "delete": "string",
+                "read": "string",
+                "update": "string"
+              }
+            ],
+            "user_data": "string",
+            "user_data_base64": "string",
+            "user_data_replace_on_change": "bool",
+            "volume_tags": [
+              "map",
+              "string"
+            ],
+            "vpc_security_group_ids": [
+              "set",
+              "string"
+            ]
+          }
+        ],
+        [
+          "object",
+          {
+            "ami": "string",
+            "arn": "string",
+            "associate_public_ip_address": "bool",
+            "availability_zone": "string",
+            "capacity_reservation_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "capacity_reservation_preference": "string",
+                  "capacity_reservation_target": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "capacity_reservation_id": "string",
+                        "capacity_reservation_resource_group_arn": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "cpu_options": [
+              "list",
+              [
+                "object",
+                {
+                  "amd_sev_snp": "string",
+                  "core_count": "number",
+                  "nested_virtualization": "string",
+                  "threads_per_core": "number"
+                }
+              ]
+            ],
+            "credit_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "cpu_credits": "string"
+                }
+              ]
+            ],
+            "disable_api_stop": "bool",
+            "disable_api_termination": "bool",
+            "ebs_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "snapshot_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "ebs_optimized": "bool",
+            "enable_primary_ipv6": "bool",
+            "enclave_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enabled": "bool"
+                }
+              ]
+            ],
+            "ephemeral_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "device_name": "string",
+                  "no_device": "bool",
+                  "virtual_name": "string"
+                }
+              ]
+            ],
+            "force_destroy": "bool",
+            "get_password_data": "bool",
+            "hibernation": "bool",
+            "host_id": "string",
+            "host_resource_group_arn": "string",
+            "iam_instance_profile": "string",
+            "id": "string",
+            "instance_initiated_shutdown_behavior": "string",
+            "instance_lifecycle": "string",
+            "instance_market_options": [
+              "list",
+              [
+                "object",
+                {
+                  "market_type": "string",
+                  "spot_options": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "instance_interruption_behavior": "string",
+                        "max_price": "string",
+                        "spot_instance_type": "string",
+                        "valid_until": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "instance_state": "string",
+            "instance_type": "string",
+            "ipv6_address_count": "number",
+            "ipv6_addresses": [
+              "list",
+              "string"
+            ],
+            "key_name": "string",
+            "launch_template": [
+              "list",
+              [
+                "object",
+                {
+                  "id": "string",
+                  "name": "string",
+                  "version": "string"
+                }
+              ]
+            ],
+            "maintenance_options": [
+              "list",
+              [
+                "object",
+                {
+                  "auto_recovery": "string"
+                }
+              ]
+            ],
+            "metadata_options": [
+              "list",
+              [
+                "object",
+                {
+                  "http_endpoint": "string",
+                  "http_protocol_ipv6": "string",
+                  "http_put_response_hop_limit": "number",
+                  "http_tokens": "string",
+                  "instance_metadata_tags": "string"
+                }
+              ]
+            ],
+            "monitoring": "bool",
+            "network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "network_card_index": "number",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "outpost_arn": "string",
+            "password_data": "string",
+            "placement_group": "string",
+            "placement_group_id": "string",
+            "placement_partition_number": "number",
+            "primary_network_interface": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "primary_network_interface_id": "string",
+            "private_dns": "string",
+            "private_dns_name_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enable_resource_name_dns_a_record": "bool",
+                  "enable_resource_name_dns_aaaa_record": "bool",
+                  "hostname_type": "string"
+                }
+              ]
+            ],
+            "private_ip": "string",
+            "public_dns": "string",
+            "public_ip": "string",
+            "region": "string",
+            "root_block_device": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "secondary_network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "interface_type": "string",
+                  "mac_address": "string",
+                  "network_card_index": "number",
+                  "private_ip_address_count": "number",
+                  "private_ip_addresses": [
+                    "list",
+                    "string"
+                  ],
+                  "secondary_interface_id": "string",
+                  "secondary_network_id": "string",
+                  "secondary_subnet_id": "string",
+                  "source_dest_check": "bool",
+                  "status": "string"
+                }
+              ]
+            ],
+            "secondary_private_ips": [
+              "set",
+              "string"
+            ],
+            "security_groups": [
+              "set",
+              "string"
+            ],
+            "source_dest_check": "bool",
+            "spot_instance_request_id": "string",
+            "subnet_id": "string",
+            "tags": [
+              "map",
+              "string"
+            ],
+            "tags_all": [
+              "map",
+              "string"
+            ],
+            "tenancy": "string",
+            "timeouts": [
+              "object",
+              {
+                "create": "string",
+                "delete": "string",
+                "read": "string",
+                "update": "string"
+              }
+            ],
+            "user_data": "string",
+            "user_data_base64": "string",
+            "user_data_replace_on_change": "bool",
+            "volume_tags": [
+              "map",
+              "string"
+            ],
+            "vpc_security_group_ids": [
+              "set",
+              "string"
+            ]
+          }
+        ],
+        [
+          "object",
+          {
+            "ami": "string",
+            "arn": "string",
+            "associate_public_ip_address": "bool",
+            "availability_zone": "string",
+            "capacity_reservation_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "capacity_reservation_preference": "string",
+                  "capacity_reservation_target": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "capacity_reservation_id": "string",
+                        "capacity_reservation_resource_group_arn": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "cpu_options": [
+              "list",
+              [
+                "object",
+                {
+                  "amd_sev_snp": "string",
+                  "core_count": "number",
+                  "nested_virtualization": "string",
+                  "threads_per_core": "number"
+                }
+              ]
+            ],
+            "credit_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "cpu_credits": "string"
+                }
+              ]
+            ],
+            "disable_api_stop": "bool",
+            "disable_api_termination": "bool",
+            "ebs_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "snapshot_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "ebs_optimized": "bool",
+            "enable_primary_ipv6": "bool",
+            "enclave_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enabled": "bool"
+                }
+              ]
+            ],
+            "ephemeral_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "device_name": "string",
+                  "no_device": "bool",
+                  "virtual_name": "string"
+                }
+              ]
+            ],
+            "force_destroy": "bool",
+            "get_password_data": "bool",
+            "hibernation": "bool",
+            "host_id": "string",
+            "host_resource_group_arn": "string",
+            "iam_instance_profile": "string",
+            "id": "string",
+            "instance_initiated_shutdown_behavior": "string",
+            "instance_lifecycle": "string",
+            "instance_market_options": [
+              "list",
+              [
+                "object",
+                {
+                  "market_type": "string",
+                  "spot_options": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "instance_interruption_behavior": "string",
+                        "max_price": "string",
+                        "spot_instance_type": "string",
+                        "valid_until": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "instance_state": "string",
+            "instance_type": "string",
+            "ipv6_address_count": "number",
+            "ipv6_addresses": [
+              "list",
+              "string"
+            ],
+            "key_name": "string",
+            "launch_template": [
+              "list",
+              [
+                "object",
+                {
+                  "id": "string",
+                  "name": "string",
+                  "version": "string"
+                }
+              ]
+            ],
+            "maintenance_options": [
+              "list",
+              [
+                "object",
+                {
+                  "auto_recovery": "string"
+                }
+              ]
+            ],
+            "metadata_options": [
+              "list",
+              [
+                "object",
+                {
+                  "http_endpoint": "string",
+                  "http_protocol_ipv6": "string",
+                  "http_put_response_hop_limit": "number",
+                  "http_tokens": "string",
+                  "instance_metadata_tags": "string"
+                }
+              ]
+            ],
+            "monitoring": "bool",
+            "network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "network_card_index": "number",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "outpost_arn": "string",
+            "password_data": "string",
+            "placement_group": "string",
+            "placement_group_id": "string",
+            "placement_partition_number": "number",
+            "primary_network_interface": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "primary_network_interface_id": "string",
+            "private_dns": "string",
+            "private_dns_name_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enable_resource_name_dns_a_record": "bool",
+                  "enable_resource_name_dns_aaaa_record": "bool",
+                  "hostname_type": "string"
+                }
+              ]
+            ],
+            "private_ip": "string",
+            "public_dns": "string",
+            "public_ip": "string",
+            "region": "string",
+            "root_block_device": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "secondary_network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "interface_type": "string",
+                  "mac_address": "string",
+                  "network_card_index": "number",
+                  "private_ip_address_count": "number",
+                  "private_ip_addresses": [
+                    "list",
+                    "string"
+                  ],
+                  "secondary_interface_id": "string",
+                  "secondary_network_id": "string",
+                  "secondary_subnet_id": "string",
+                  "source_dest_check": "bool",
+                  "status": "string"
+                }
+              ]
+            ],
+            "secondary_private_ips": [
+              "set",
+              "string"
+            ],
+            "security_groups": [
+              "set",
+              "string"
+            ],
+            "source_dest_check": "bool",
+            "spot_instance_request_id": "string",
+            "subnet_id": "string",
+            "tags": [
+              "map",
+              "string"
+            ],
+            "tags_all": [
+              "map",
+              "string"
+            ],
+            "tenancy": "string",
+            "timeouts": [
+              "object",
+              {
+                "create": "string",
+                "delete": "string",
+                "read": "string",
+                "update": "string"
+              }
+            ],
+            "user_data": "string",
+            "user_data_base64": "string",
+            "user_data_replace_on_change": "bool",
+            "volume_tags": [
+              "map",
+              "string"
+            ],
+            "vpc_security_group_ids": [
+              "set",
+              "string"
+            ]
+          }
+        ],
+        [
+          "object",
+          {
+            "ami": "string",
+            "arn": "string",
+            "associate_public_ip_address": "bool",
+            "availability_zone": "string",
+            "capacity_reservation_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "capacity_reservation_preference": "string",
+                  "capacity_reservation_target": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "capacity_reservation_id": "string",
+                        "capacity_reservation_resource_group_arn": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "cpu_options": [
+              "list",
+              [
+                "object",
+                {
+                  "amd_sev_snp": "string",
+                  "core_count": "number",
+                  "nested_virtualization": "string",
+                  "threads_per_core": "number"
+                }
+              ]
+            ],
+            "credit_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "cpu_credits": "string"
+                }
+              ]
+            ],
+            "disable_api_stop": "bool",
+            "disable_api_termination": "bool",
+            "ebs_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "snapshot_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "ebs_optimized": "bool",
+            "enable_primary_ipv6": "bool",
+            "enclave_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enabled": "bool"
+                }
+              ]
+            ],
+            "ephemeral_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "device_name": "string",
+                  "no_device": "bool",
+                  "virtual_name": "string"
+                }
+              ]
+            ],
+            "force_destroy": "bool",
+            "get_password_data": "bool",
+            "hibernation": "bool",
+            "host_id": "string",
+            "host_resource_group_arn": "string",
+            "iam_instance_profile": "string",
+            "id": "string",
+            "instance_initiated_shutdown_behavior": "string",
+            "instance_lifecycle": "string",
+            "instance_market_options": [
+              "list",
+              [
+                "object",
+                {
+                  "market_type": "string",
+                  "spot_options": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "instance_interruption_behavior": "string",
+                        "max_price": "string",
+                        "spot_instance_type": "string",
+                        "valid_until": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "instance_state": "string",
+            "instance_type": "string",
+            "ipv6_address_count": "number",
+            "ipv6_addresses": [
+              "list",
+              "string"
+            ],
+            "key_name": "string",
+            "launch_template": [
+              "list",
+              [
+                "object",
+                {
+                  "id": "string",
+                  "name": "string",
+                  "version": "string"
+                }
+              ]
+            ],
+            "maintenance_options": [
+              "list",
+              [
+                "object",
+                {
+                  "auto_recovery": "string"
+                }
+              ]
+            ],
+            "metadata_options": [
+              "list",
+              [
+                "object",
+                {
+                  "http_endpoint": "string",
+                  "http_protocol_ipv6": "string",
+                  "http_put_response_hop_limit": "number",
+                  "http_tokens": "string",
+                  "instance_metadata_tags": "string"
+                }
+              ]
+            ],
+            "monitoring": "bool",
+            "network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "network_card_index": "number",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "outpost_arn": "string",
+            "password_data": "string",
+            "placement_group": "string",
+            "placement_group_id": "string",
+            "placement_partition_number": "number",
+            "primary_network_interface": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "primary_network_interface_id": "string",
+            "private_dns": "string",
+            "private_dns_name_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enable_resource_name_dns_a_record": "bool",
+                  "enable_resource_name_dns_aaaa_record": "bool",
+                  "hostname_type": "string"
+                }
+              ]
+            ],
+            "private_ip": "string",
+            "public_dns": "string",
+            "public_ip": "string",
+            "region": "string",
+            "root_block_device": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "secondary_network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "interface_type": "string",
+                  "mac_address": "string",
+                  "network_card_index": "number",
+                  "private_ip_address_count": "number",
+                  "private_ip_addresses": [
+                    "list",
+                    "string"
+                  ],
+                  "secondary_interface_id": "string",
+                  "secondary_network_id": "string",
+                  "secondary_subnet_id": "string",
+                  "source_dest_check": "bool",
+                  "status": "string"
+                }
+              ]
+            ],
+            "secondary_private_ips": [
+              "set",
+              "string"
+            ],
+            "security_groups": [
+              "set",
+              "string"
+            ],
+            "source_dest_check": "bool",
+            "spot_instance_request_id": "string",
+            "subnet_id": "string",
+            "tags": [
+              "map",
+              "string"
+            ],
+            "tags_all": [
+              "map",
+              "string"
+            ],
+            "tenancy": "string",
+            "timeouts": [
+              "object",
+              {
+                "create": "string",
+                "delete": "string",
+                "read": "string",
+                "update": "string"
+              }
+            ],
+            "user_data": "string",
+            "user_data_base64": "string",
+            "user_data_replace_on_change": "bool",
+            "volume_tags": [
+              "map",
+              "string"
+            ],
+            "vpc_security_group_ids": [
+              "set",
+              "string"
+            ]
+          }
+        ],
+        [
+          "object",
+          {
+            "ami": "string",
+            "arn": "string",
+            "associate_public_ip_address": "bool",
+            "availability_zone": "string",
+            "capacity_reservation_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "capacity_reservation_preference": "string",
+                  "capacity_reservation_target": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "capacity_reservation_id": "string",
+                        "capacity_reservation_resource_group_arn": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "cpu_options": [
+              "list",
+              [
+                "object",
+                {
+                  "amd_sev_snp": "string",
+                  "core_count": "number",
+                  "nested_virtualization": "string",
+                  "threads_per_core": "number"
+                }
+              ]
+            ],
+            "credit_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "cpu_credits": "string"
+                }
+              ]
+            ],
+            "disable_api_stop": "bool",
+            "disable_api_termination": "bool",
+            "ebs_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "snapshot_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "ebs_optimized": "bool",
+            "enable_primary_ipv6": "bool",
+            "enclave_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enabled": "bool"
+                }
+              ]
+            ],
+            "ephemeral_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "device_name": "string",
+                  "no_device": "bool",
+                  "virtual_name": "string"
+                }
+              ]
+            ],
+            "force_destroy": "bool",
+            "get_password_data": "bool",
+            "hibernation": "bool",
+            "host_id": "string",
+            "host_resource_group_arn": "string",
+            "iam_instance_profile": "string",
+            "id": "string",
+            "instance_initiated_shutdown_behavior": "string",
+            "instance_lifecycle": "string",
+            "instance_market_options": [
+              "list",
+              [
+                "object",
+                {
+                  "market_type": "string",
+                  "spot_options": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "instance_interruption_behavior": "string",
+                        "max_price": "string",
+                        "spot_instance_type": "string",
+                        "valid_until": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "instance_state": "string",
+            "instance_type": "string",
+            "ipv6_address_count": "number",
+            "ipv6_addresses": [
+              "list",
+              "string"
+            ],
+            "key_name": "string",
+            "launch_template": [
+              "list",
+              [
+                "object",
+                {
+                  "id": "string",
+                  "name": "string",
+                  "version": "string"
+                }
+              ]
+            ],
+            "maintenance_options": [
+              "list",
+              [
+                "object",
+                {
+                  "auto_recovery": "string"
+                }
+              ]
+            ],
+            "metadata_options": [
+              "list",
+              [
+                "object",
+                {
+                  "http_endpoint": "string",
+                  "http_protocol_ipv6": "string",
+                  "http_put_response_hop_limit": "number",
+                  "http_tokens": "string",
+                  "instance_metadata_tags": "string"
+                }
+              ]
+            ],
+            "monitoring": "bool",
+            "network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "network_card_index": "number",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "outpost_arn": "string",
+            "password_data": "string",
+            "placement_group": "string",
+            "placement_group_id": "string",
+            "placement_partition_number": "number",
+            "primary_network_interface": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "primary_network_interface_id": "string",
+            "private_dns": "string",
+            "private_dns_name_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enable_resource_name_dns_a_record": "bool",
+                  "enable_resource_name_dns_aaaa_record": "bool",
+                  "hostname_type": "string"
+                }
+              ]
+            ],
+            "private_ip": "string",
+            "public_dns": "string",
+            "public_ip": "string",
+            "region": "string",
+            "root_block_device": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "secondary_network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "interface_type": "string",
+                  "mac_address": "string",
+                  "network_card_index": "number",
+                  "private_ip_address_count": "number",
+                  "private_ip_addresses": [
+                    "list",
+                    "string"
+                  ],
+                  "secondary_interface_id": "string",
+                  "secondary_network_id": "string",
+                  "secondary_subnet_id": "string",
+                  "source_dest_check": "bool",
+                  "status": "string"
+                }
+              ]
+            ],
+            "secondary_private_ips": [
+              "set",
+              "string"
+            ],
+            "security_groups": [
+              "set",
+              "string"
+            ],
+            "source_dest_check": "bool",
+            "spot_instance_request_id": "string",
+            "subnet_id": "string",
+            "tags": [
+              "map",
+              "string"
+            ],
+            "tags_all": [
+              "map",
+              "string"
+            ],
+            "tenancy": "string",
+            "timeouts": [
+              "object",
+              {
+                "create": "string",
+                "delete": "string",
+                "read": "string",
+                "update": "string"
+              }
+            ],
+            "user_data": "string",
+            "user_data_base64": "string",
+            "user_data_replace_on_change": "bool",
+            "volume_tags": [
+              "map",
+              "string"
+            ],
+            "vpc_security_group_ids": [
+              "set",
+              "string"
+            ]
+          }
+        ],
+        [
+          "object",
+          {
+            "ami": "string",
+            "arn": "string",
+            "associate_public_ip_address": "bool",
+            "availability_zone": "string",
+            "capacity_reservation_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "capacity_reservation_preference": "string",
+                  "capacity_reservation_target": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "capacity_reservation_id": "string",
+                        "capacity_reservation_resource_group_arn": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "cpu_options": [
+              "list",
+              [
+                "object",
+                {
+                  "amd_sev_snp": "string",
+                  "core_count": "number",
+                  "nested_virtualization": "string",
+                  "threads_per_core": "number"
+                }
+              ]
+            ],
+            "credit_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "cpu_credits": "string"
+                }
+              ]
+            ],
+            "disable_api_stop": "bool",
+            "disable_api_termination": "bool",
+            "ebs_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "snapshot_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "ebs_optimized": "bool",
+            "enable_primary_ipv6": "bool",
+            "enclave_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enabled": "bool"
+                }
+              ]
+            ],
+            "ephemeral_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "device_name": "string",
+                  "no_device": "bool",
+                  "virtual_name": "string"
+                }
+              ]
+            ],
+            "force_destroy": "bool",
+            "get_password_data": "bool",
+            "hibernation": "bool",
+            "host_id": "string",
+            "host_resource_group_arn": "string",
+            "iam_instance_profile": "string",
+            "id": "string",
+            "instance_initiated_shutdown_behavior": "string",
+            "instance_lifecycle": "string",
+            "instance_market_options": [
+              "list",
+              [
+                "object",
+                {
+                  "market_type": "string",
+                  "spot_options": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "instance_interruption_behavior": "string",
+                        "max_price": "string",
+                        "spot_instance_type": "string",
+                        "valid_until": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "instance_state": "string",
+            "instance_type": "string",
+            "ipv6_address_count": "number",
+            "ipv6_addresses": [
+              "list",
+              "string"
+            ],
+            "key_name": "string",
+            "launch_template": [
+              "list",
+              [
+                "object",
+                {
+                  "id": "string",
+                  "name": "string",
+                  "version": "string"
+                }
+              ]
+            ],
+            "maintenance_options": [
+              "list",
+              [
+                "object",
+                {
+                  "auto_recovery": "string"
+                }
+              ]
+            ],
+            "metadata_options": [
+              "list",
+              [
+                "object",
+                {
+                  "http_endpoint": "string",
+                  "http_protocol_ipv6": "string",
+                  "http_put_response_hop_limit": "number",
+                  "http_tokens": "string",
+                  "instance_metadata_tags": "string"
+                }
+              ]
+            ],
+            "monitoring": "bool",
+            "network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "network_card_index": "number",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "outpost_arn": "string",
+            "password_data": "string",
+            "placement_group": "string",
+            "placement_group_id": "string",
+            "placement_partition_number": "number",
+            "primary_network_interface": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "primary_network_interface_id": "string",
+            "private_dns": "string",
+            "private_dns_name_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enable_resource_name_dns_a_record": "bool",
+                  "enable_resource_name_dns_aaaa_record": "bool",
+                  "hostname_type": "string"
+                }
+              ]
+            ],
+            "private_ip": "string",
+            "public_dns": "string",
+            "public_ip": "string",
+            "region": "string",
+            "root_block_device": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "secondary_network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "interface_type": "string",
+                  "mac_address": "string",
+                  "network_card_index": "number",
+                  "private_ip_address_count": "number",
+                  "private_ip_addresses": [
+                    "list",
+                    "string"
+                  ],
+                  "secondary_interface_id": "string",
+                  "secondary_network_id": "string",
+                  "secondary_subnet_id": "string",
+                  "source_dest_check": "bool",
+                  "status": "string"
+                }
+              ]
+            ],
+            "secondary_private_ips": [
+              "set",
+              "string"
+            ],
+            "security_groups": [
+              "set",
+              "string"
+            ],
+            "source_dest_check": "bool",
+            "spot_instance_request_id": "string",
+            "subnet_id": "string",
+            "tags": [
+              "map",
+              "string"
+            ],
+            "tags_all": [
+              "map",
+              "string"
+            ],
+            "tenancy": "string",
+            "timeouts": [
+              "object",
+              {
+                "create": "string",
+                "delete": "string",
+                "read": "string",
+                "update": "string"
+              }
+            ],
+            "user_data": "string",
+            "user_data_base64": "string",
+            "user_data_replace_on_change": "bool",
+            "volume_tags": [
+              "map",
+              "string"
+            ],
+            "vpc_security_group_ids": [
+              "set",
+              "string"
+            ]
+          }
+        ],
+        [
+          "object",
+          {
+            "ami": "string",
+            "arn": "string",
+            "associate_public_ip_address": "bool",
+            "availability_zone": "string",
+            "capacity_reservation_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "capacity_reservation_preference": "string",
+                  "capacity_reservation_target": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "capacity_reservation_id": "string",
+                        "capacity_reservation_resource_group_arn": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "cpu_options": [
+              "list",
+              [
+                "object",
+                {
+                  "amd_sev_snp": "string",
+                  "core_count": "number",
+                  "nested_virtualization": "string",
+                  "threads_per_core": "number"
+                }
+              ]
+            ],
+            "credit_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "cpu_credits": "string"
+                }
+              ]
+            ],
+            "disable_api_stop": "bool",
+            "disable_api_termination": "bool",
+            "ebs_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "snapshot_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "ebs_optimized": "bool",
+            "enable_primary_ipv6": "bool",
+            "enclave_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enabled": "bool"
+                }
+              ]
+            ],
+            "ephemeral_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "device_name": "string",
+                  "no_device": "bool",
+                  "virtual_name": "string"
+                }
+              ]
+            ],
+            "force_destroy": "bool",
+            "get_password_data": "bool",
+            "hibernation": "bool",
+            "host_id": "string",
+            "host_resource_group_arn": "string",
+            "iam_instance_profile": "string",
+            "id": "string",
+            "instance_initiated_shutdown_behavior": "string",
+            "instance_lifecycle": "string",
+            "instance_market_options": [
+              "list",
+              [
+                "object",
+                {
+                  "market_type": "string",
+                  "spot_options": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "instance_interruption_behavior": "string",
+                        "max_price": "string",
+                        "spot_instance_type": "string",
+                        "valid_until": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "instance_state": "string",
+            "instance_type": "string",
+            "ipv6_address_count": "number",
+            "ipv6_addresses": [
+              "list",
+              "string"
+            ],
+            "key_name": "string",
+            "launch_template": [
+              "list",
+              [
+                "object",
+                {
+                  "id": "string",
+                  "name": "string",
+                  "version": "string"
+                }
+              ]
+            ],
+            "maintenance_options": [
+              "list",
+              [
+                "object",
+                {
+                  "auto_recovery": "string"
+                }
+              ]
+            ],
+            "metadata_options": [
+              "list",
+              [
+                "object",
+                {
+                  "http_endpoint": "string",
+                  "http_protocol_ipv6": "string",
+                  "http_put_response_hop_limit": "number",
+                  "http_tokens": "string",
+                  "instance_metadata_tags": "string"
+                }
+              ]
+            ],
+            "monitoring": "bool",
+            "network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "network_card_index": "number",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "outpost_arn": "string",
+            "password_data": "string",
+            "placement_group": "string",
+            "placement_group_id": "string",
+            "placement_partition_number": "number",
+            "primary_network_interface": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "primary_network_interface_id": "string",
+            "private_dns": "string",
+            "private_dns_name_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enable_resource_name_dns_a_record": "bool",
+                  "enable_resource_name_dns_aaaa_record": "bool",
+                  "hostname_type": "string"
+                }
+              ]
+            ],
+            "private_ip": "string",
+            "public_dns": "string",
+            "public_ip": "string",
+            "region": "string",
+            "root_block_device": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "secondary_network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "interface_type": "string",
+                  "mac_address": "string",
+                  "network_card_index": "number",
+                  "private_ip_address_count": "number",
+                  "private_ip_addresses": [
+                    "list",
+                    "string"
+                  ],
+                  "secondary_interface_id": "string",
+                  "secondary_network_id": "string",
+                  "secondary_subnet_id": "string",
+                  "source_dest_check": "bool",
+                  "status": "string"
+                }
+              ]
+            ],
+            "secondary_private_ips": [
+              "set",
+              "string"
+            ],
+            "security_groups": [
+              "set",
+              "string"
+            ],
+            "source_dest_check": "bool",
+            "spot_instance_request_id": "string",
+            "subnet_id": "string",
+            "tags": [
+              "map",
+              "string"
+            ],
+            "tags_all": [
+              "map",
+              "string"
+            ],
+            "tenancy": "string",
+            "timeouts": [
+              "object",
+              {
+                "create": "string",
+                "delete": "string",
+                "read": "string",
+                "update": "string"
+              }
+            ],
+            "user_data": "string",
+            "user_data_base64": "string",
+            "user_data_replace_on_change": "bool",
+            "volume_tags": [
+              "map",
+              "string"
+            ],
+            "vpc_security_group_ids": [
+              "set",
+              "string"
+            ]
+          }
+        ],
+        [
+          "object",
+          {
+            "ami": "string",
+            "arn": "string",
+            "associate_public_ip_address": "bool",
+            "availability_zone": "string",
+            "capacity_reservation_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "capacity_reservation_preference": "string",
+                  "capacity_reservation_target": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "capacity_reservation_id": "string",
+                        "capacity_reservation_resource_group_arn": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "cpu_options": [
+              "list",
+              [
+                "object",
+                {
+                  "amd_sev_snp": "string",
+                  "core_count": "number",
+                  "nested_virtualization": "string",
+                  "threads_per_core": "number"
+                }
+              ]
+            ],
+            "credit_specification": [
+              "list",
+              [
+                "object",
+                {
+                  "cpu_credits": "string"
+                }
+              ]
+            ],
+            "disable_api_stop": "bool",
+            "disable_api_termination": "bool",
+            "ebs_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "snapshot_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "ebs_optimized": "bool",
+            "enable_primary_ipv6": "bool",
+            "enclave_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enabled": "bool"
+                }
+              ]
+            ],
+            "ephemeral_block_device": [
+              "set",
+              [
+                "object",
+                {
+                  "device_name": "string",
+                  "no_device": "bool",
+                  "virtual_name": "string"
+                }
+              ]
+            ],
+            "force_destroy": "bool",
+            "get_password_data": "bool",
+            "hibernation": "bool",
+            "host_id": "string",
+            "host_resource_group_arn": "string",
+            "iam_instance_profile": "string",
+            "id": "string",
+            "instance_initiated_shutdown_behavior": "string",
+            "instance_lifecycle": "string",
+            "instance_market_options": [
+              "list",
+              [
+                "object",
+                {
+                  "market_type": "string",
+                  "spot_options": [
+                    "list",
+                    [
+                      "object",
+                      {
+                        "instance_interruption_behavior": "string",
+                        "max_price": "string",
+                        "spot_instance_type": "string",
+                        "valid_until": "string"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ],
+            "instance_state": "string",
+            "instance_type": "string",
+            "ipv6_address_count": "number",
+            "ipv6_addresses": [
+              "list",
+              "string"
+            ],
+            "key_name": "string",
+            "launch_template": [
+              "list",
+              [
+                "object",
+                {
+                  "id": "string",
+                  "name": "string",
+                  "version": "string"
+                }
+              ]
+            ],
+            "maintenance_options": [
+              "list",
+              [
+                "object",
+                {
+                  "auto_recovery": "string"
+                }
+              ]
+            ],
+            "metadata_options": [
+              "list",
+              [
+                "object",
+                {
+                  "http_endpoint": "string",
+                  "http_protocol_ipv6": "string",
+                  "http_put_response_hop_limit": "number",
+                  "http_tokens": "string",
+                  "instance_metadata_tags": "string"
+                }
+              ]
+            ],
+            "monitoring": "bool",
+            "network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "network_card_index": "number",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "outpost_arn": "string",
+            "password_data": "string",
+            "placement_group": "string",
+            "placement_group_id": "string",
+            "placement_partition_number": "number",
+            "primary_network_interface": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "network_interface_id": "string"
+                }
+              ]
+            ],
+            "primary_network_interface_id": "string",
+            "private_dns": "string",
+            "private_dns_name_options": [
+              "list",
+              [
+                "object",
+                {
+                  "enable_resource_name_dns_a_record": "bool",
+                  "enable_resource_name_dns_aaaa_record": "bool",
+                  "hostname_type": "string"
+                }
+              ]
+            ],
+            "private_ip": "string",
+            "public_dns": "string",
+            "public_ip": "string",
+            "region": "string",
+            "root_block_device": [
+              "list",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_name": "string",
+                  "encrypted": "bool",
+                  "iops": "number",
+                  "kms_key_id": "string",
+                  "tags": [
+                    "map",
+                    "string"
+                  ],
+                  "tags_all": [
+                    "map",
+                    "string"
+                  ],
+                  "throughput": "number",
+                  "volume_id": "string",
+                  "volume_size": "number",
+                  "volume_type": "string"
+                }
+              ]
+            ],
+            "secondary_network_interface": [
+              "set",
+              [
+                "object",
+                {
+                  "delete_on_termination": "bool",
+                  "device_index": "number",
+                  "interface_type": "string",
+                  "mac_address": "string",
+                  "network_card_index": "number",
+                  "private_ip_address_count": "number",
+                  "private_ip_addresses": [
+                    "list",
+                    "string"
+                  ],
+                  "secondary_interface_id": "string",
+                  "secondary_network_id": "string",
+                  "secondary_subnet_id": "string",
+                  "source_dest_check": "bool",
+                  "status": "string"
+                }
+              ]
+            ],
+            "secondary_private_ips": [
+              "set",
+              "string"
+            ],
+            "security_groups": [
+              "set",
+              "string"
+            ],
+            "source_dest_check": "bool",
+            "spot_instance_request_id": "string",
+            "subnet_id": "string",
+            "tags": [
+              "map",
+              "string"
+            ],
+            "tags_all": [
+              "map",
+              "string"
+            ],
+            "tenancy": "string",
+            "timeouts": [
+              "object",
+              {
+                "create": "string",
+                "delete": "string",
+                "read": "string",
+                "update": "string"
+              }
+            ],
+            "user_data": "string",
+            "user_data_base64": "string",
+            "user_data_replace_on_change": "bool",
+            "volume_tags": [
+              "map",
+              "string"
+            ],
+            "vpc_security_group_ids": [
+              "set",
+              "string"
+            ]
+          }
+        ]
+      ]
+    ],
+    "value": [
+      {
+        "ami": "ami-0055977a6e828a4f4",
+        "arn": "arn:aws:ec2:us-east-1:090072210120:instance/i-0562f5e75a6e5d4db",
+        "associate_public_ip_address": true,
+        "availability_zone": "us-east-1c",
+        "capacity_reservation_specification": [
+          {
+            "capacity_reservation_preference": "open",
+            "capacity_reservation_target": []
+          }
+        ],
+        "cpu_options": [
+          {
+            "amd_sev_snp": "",
+            "core_count": 1,
+            "nested_virtualization": "",
+            "threads_per_core": 2
+          }
+        ],
+        "credit_specification": [
+          {
+            "cpu_credits": "unlimited"
+          }
+        ],
+        "disable_api_stop": false,
+        "disable_api_termination": false,
+        "ebs_block_device": [],
+        "ebs_optimized": false,
+        "enable_primary_ipv6": null,
+        "enclave_options": [
+          {
+            "enabled": false
+          }
+        ],
+        "ephemeral_block_device": [],
+        "force_destroy": false,
+        "get_password_data": false,
+        "hibernation": false,
+        "host_id": "",
+        "host_resource_group_arn": null,
+        "iam_instance_profile": "",
+        "id": "i-0562f5e75a6e5d4db",
+        "instance_initiated_shutdown_behavior": "stop",
+        "instance_lifecycle": "",
+        "instance_market_options": [],
+        "instance_state": "running",
+        "instance_type": "t3.micro",
+        "ipv6_address_count": 0,
+        "ipv6_addresses": [],
+        "key_name": "",
+        "launch_template": [],
+        "maintenance_options": [
+          {
+            "auto_recovery": "default"
+          }
+        ],
+        "metadata_options": [
+          {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "optional",
+            "instance_metadata_tags": "disabled"
+          }
+        ],
+        "monitoring": false,
+        "network_interface": [],
+        "outpost_arn": "",
+        "password_data": "",
+        "placement_group": "",
+        "placement_group_id": "",
+        "placement_partition_number": 0,
+        "primary_network_interface": [
+          {
+            "delete_on_termination": true,
+            "network_interface_id": "eni-0a8f54929b45768ae"
+          }
+        ],
+        "primary_network_interface_id": "eni-0a8f54929b45768ae",
+        "private_dns": "ip-172-31-29-214.ec2.internal",
+        "private_dns_name_options": [
+          {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+          }
+        ],
+        "private_ip": "172.31.29.214",
+        "public_dns": "ec2-54-242-110-69.compute-1.amazonaws.com",
+        "public_ip": "54.242.110.69",
+        "region": "us-east-1",
+        "root_block_device": [
+          {
+            "delete_on_termination": true,
+            "device_name": "/dev/sda1",
+            "encrypted": false,
+            "iops": 3000,
+            "kms_key_id": "",
+            "tags": {},
+            "tags_all": {},
+            "throughput": 125,
+            "volume_id": "vol-011df756b171cd911",
+            "volume_size": 20,
+            "volume_type": "gp3"
+          }
+        ],
+        "secondary_network_interface": [],
+        "secondary_private_ips": [],
+        "security_groups": [
+          "roboshop-dev-common",
+          "roboshop-dev-mongodb"
+        ],
+        "source_dest_check": true,
+        "spot_instance_request_id": "",
+        "subnet_id": "subnet-07095ec57966c08df",
+        "tags": {
+          "Name": "roboshop-dev-mongodb"
+        },
+        "tags_all": {
+          "Name": "roboshop-dev-mongodb"
+        },
+        "tenancy": "default",
+        "timeouts": null,
+        "user_data": null,
+        "user_data_base64": null,
+        "user_data_replace_on_change": false,
+        "volume_tags": null,
+        "vpc_security_group_ids": [
+          "sg-03edfb1b334502c94",
+          "sg-05b947ec24bd56c89"
+        ]
+      },
+      {
+        "ami": "ami-0055977a6e828a4f4",
+        "arn": "arn:aws:ec2:us-east-1:090072210120:instance/i-0d2eb0776c8186731",
+        "associate_public_ip_address": true,
+        "availability_zone": "us-east-1c",
+        "capacity_reservation_specification": [
+          {
+            "capacity_reservation_preference": "open",
+            "capacity_reservation_target": []
+          }
+        ],
+        "cpu_options": [
+          {
+            "amd_sev_snp": "",
+            "core_count": 1,
+            "nested_virtualization": "",
+            "threads_per_core": 2
+          }
+        ],
+        "credit_specification": [
+          {
+            "cpu_credits": "unlimited"
+          }
+        ],
+        "disable_api_stop": false,
+        "disable_api_termination": false,
+        "ebs_block_device": [],
+        "ebs_optimized": false,
+        "enable_primary_ipv6": null,
+        "enclave_options": [
+          {
+            "enabled": false
+          }
+        ],
+        "ephemeral_block_device": [],
+        "force_destroy": false,
+        "get_password_data": false,
+        "hibernation": false,
+        "host_id": "",
+        "host_resource_group_arn": null,
+        "iam_instance_profile": "",
+        "id": "i-0d2eb0776c8186731",
+        "instance_initiated_shutdown_behavior": "stop",
+        "instance_lifecycle": "",
+        "instance_market_options": [],
+        "instance_state": "running",
+        "instance_type": "t3.micro",
+        "ipv6_address_count": 0,
+        "ipv6_addresses": [],
+        "key_name": "",
+        "launch_template": [],
+        "maintenance_options": [
+          {
+            "auto_recovery": "default"
+          }
+        ],
+        "metadata_options": [
+          {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "optional",
+            "instance_metadata_tags": "disabled"
+          }
+        ],
+        "monitoring": false,
+        "network_interface": [],
+        "outpost_arn": "",
+        "password_data": "",
+        "placement_group": "",
+        "placement_group_id": "",
+        "placement_partition_number": 0,
+        "primary_network_interface": [
+          {
+            "delete_on_termination": true,
+            "network_interface_id": "eni-0b81baf47188127c0"
+          }
+        ],
+        "primary_network_interface_id": "eni-0b81baf47188127c0",
+        "private_dns": "ip-172-31-16-104.ec2.internal",
+        "private_dns_name_options": [
+          {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+          }
+        ],
+        "private_ip": "172.31.16.104",
+        "public_dns": "ec2-52-54-155-125.compute-1.amazonaws.com",
+        "public_ip": "52.54.155.125",
+        "region": "us-east-1",
+        "root_block_device": [
+          {
+            "delete_on_termination": true,
+            "device_name": "/dev/sda1",
+            "encrypted": false,
+            "iops": 3000,
+            "kms_key_id": "",
+            "tags": {},
+            "tags_all": {},
+            "throughput": 125,
+            "volume_id": "vol-0fc1f9571eec848fa",
+            "volume_size": 20,
+            "volume_type": "gp3"
+          }
+        ],
+        "secondary_network_interface": [],
+        "secondary_private_ips": [],
+        "security_groups": [
+          "roboshop-dev-common",
+          "roboshop-dev-redis"
+        ],
+        "source_dest_check": true,
+        "spot_instance_request_id": "",
+        "subnet_id": "subnet-07095ec57966c08df",
+        "tags": {
+          "Name": "roboshop-dev-redis"
+        },
+        "tags_all": {
+          "Name": "roboshop-dev-redis"
+        },
+        "tenancy": "default",
+        "timeouts": null,
+        "user_data": null,
+        "user_data_base64": null,
+        "user_data_replace_on_change": false,
+        "volume_tags": null,
+        "vpc_security_group_ids": [
+          "sg-03edfb1b334502c94",
+          "sg-0b2841b78ae623e9c"
+        ]
+      },
+      {
+        "ami": "ami-0055977a6e828a4f4",
+        "arn": "arn:aws:ec2:us-east-1:090072210120:instance/i-0fb5ae0e0d263e03c",
+        "associate_public_ip_address": true,
+        "availability_zone": "us-east-1c",
+        "capacity_reservation_specification": [
+          {
+            "capacity_reservation_preference": "open",
+            "capacity_reservation_target": []
+          }
+        ],
+        "cpu_options": [
+          {
+            "amd_sev_snp": "",
+            "core_count": 1,
+            "nested_virtualization": "",
+            "threads_per_core": 2
+          }
+        ],
+        "credit_specification": [
+          {
+            "cpu_credits": "unlimited"
+          }
+        ],
+        "disable_api_stop": false,
+        "disable_api_termination": false,
+        "ebs_block_device": [],
+        "ebs_optimized": false,
+        "enable_primary_ipv6": null,
+        "enclave_options": [
+          {
+            "enabled": false
+          }
+        ],
+        "ephemeral_block_device": [],
+        "force_destroy": false,
+        "get_password_data": false,
+        "hibernation": false,
+        "host_id": "",
+        "host_resource_group_arn": null,
+        "iam_instance_profile": "",
+        "id": "i-0fb5ae0e0d263e03c",
+        "instance_initiated_shutdown_behavior": "stop",
+        "instance_lifecycle": "",
+        "instance_market_options": [],
+        "instance_state": "running",
+        "instance_type": "t3.micro",
+        "ipv6_address_count": 0,
+        "ipv6_addresses": [],
+        "key_name": "",
+        "launch_template": [],
+        "maintenance_options": [
+          {
+            "auto_recovery": "default"
+          }
+        ],
+        "metadata_options": [
+          {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "optional",
+            "instance_metadata_tags": "disabled"
+          }
+        ],
+        "monitoring": false,
+        "network_interface": [],
+        "outpost_arn": "",
+        "password_data": "",
+        "placement_group": "",
+        "placement_group_id": "",
+        "placement_partition_number": 0,
+        "primary_network_interface": [
+          {
+            "delete_on_termination": true,
+            "network_interface_id": "eni-0291be54eb39aba36"
+          }
+        ],
+        "primary_network_interface_id": "eni-0291be54eb39aba36",
+        "private_dns": "ip-172-31-28-83.ec2.internal",
+        "private_dns_name_options": [
+          {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+          }
+        ],
+        "private_ip": "172.31.28.83",
+        "public_dns": "ec2-54-90-168-2.compute-1.amazonaws.com",
+        "public_ip": "54.90.168.2",
+        "region": "us-east-1",
+        "root_block_device": [
+          {
+            "delete_on_termination": true,
+            "device_name": "/dev/sda1",
+            "encrypted": false,
+            "iops": 3000,
+            "kms_key_id": "",
+            "tags": {},
+            "tags_all": {},
+            "throughput": 125,
+            "volume_id": "vol-0592d31c0efaee584",
+            "volume_size": 20,
+            "volume_type": "gp3"
+          }
+        ],
+        "secondary_network_interface": [],
+        "secondary_private_ips": [],
+        "security_groups": [
+          "roboshop-dev-common",
+          "roboshop-dev-mysql"
+        ],
+        "source_dest_check": true,
+        "spot_instance_request_id": "",
+        "subnet_id": "subnet-07095ec57966c08df",
+        "tags": {
+          "Name": "roboshop-dev-mysql"
+        },
+        "tags_all": {
+          "Name": "roboshop-dev-mysql"
+        },
+        "tenancy": "default",
+        "timeouts": null,
+        "user_data": null,
+        "user_data_base64": null,
+        "user_data_replace_on_change": false,
+        "volume_tags": null,
+        "vpc_security_group_ids": [
+          "sg-03edfb1b334502c94",
+          "sg-08b683039033f9997"
+        ]
+      },
+      {
+        "ami": "ami-0055977a6e828a4f4",
+        "arn": "arn:aws:ec2:us-east-1:090072210120:instance/i-0c2ae6d454aa7341e",
+        "associate_public_ip_address": true,
+        "availability_zone": "us-east-1c",
+        "capacity_reservation_specification": [
+          {
+            "capacity_reservation_preference": "open",
+            "capacity_reservation_target": []
+          }
+        ],
+        "cpu_options": [
+          {
+            "amd_sev_snp": "",
+            "core_count": 1,
+            "nested_virtualization": "",
+            "threads_per_core": 2
+          }
+        ],
+        "credit_specification": [
+          {
+            "cpu_credits": "unlimited"
+          }
+        ],
+        "disable_api_stop": false,
+        "disable_api_termination": false,
+        "ebs_block_device": [],
+        "ebs_optimized": false,
+        "enable_primary_ipv6": null,
+        "enclave_options": [
+          {
+            "enabled": false
+          }
+        ],
+        "ephemeral_block_device": [],
+        "force_destroy": false,
+        "get_password_data": false,
+        "hibernation": false,
+        "host_id": "",
+        "host_resource_group_arn": null,
+        "iam_instance_profile": "",
+        "id": "i-0c2ae6d454aa7341e",
+        "instance_initiated_shutdown_behavior": "stop",
+        "instance_lifecycle": "",
+        "instance_market_options": [],
+        "instance_state": "running",
+        "instance_type": "t3.micro",
+        "ipv6_address_count": 0,
+        "ipv6_addresses": [],
+        "key_name": "",
+        "launch_template": [],
+        "maintenance_options": [
+          {
+            "auto_recovery": "default"
+          }
+        ],
+        "metadata_options": [
+          {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "optional",
+            "instance_metadata_tags": "disabled"
+          }
+        ],
+        "monitoring": false,
+        "network_interface": [],
+        "outpost_arn": "",
+        "password_data": "",
+        "placement_group": "",
+        "placement_group_id": "",
+        "placement_partition_number": 0,
+        "primary_network_interface": [
+          {
+            "delete_on_termination": true,
+            "network_interface_id": "eni-0c88cfaf1ea89e48a"
+          }
+        ],
+        "primary_network_interface_id": "eni-0c88cfaf1ea89e48a",
+        "private_dns": "ip-172-31-30-60.ec2.internal",
+        "private_dns_name_options": [
+          {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+          }
+        ],
+        "private_ip": "172.31.30.60",
+        "public_dns": "ec2-18-207-150-111.compute-1.amazonaws.com",
+        "public_ip": "18.207.150.111",
+        "region": "us-east-1",
+        "root_block_device": [
+          {
+            "delete_on_termination": true,
+            "device_name": "/dev/sda1",
+            "encrypted": false,
+            "iops": 3000,
+            "kms_key_id": "",
+            "tags": {},
+            "tags_all": {},
+            "throughput": 125,
+            "volume_id": "vol-04825401c468e7a64",
+            "volume_size": 20,
+            "volume_type": "gp3"
+          }
+        ],
+        "secondary_network_interface": [],
+        "secondary_private_ips": [],
+        "security_groups": [
+          "roboshop-dev-common",
+          "roboshop-dev-rabbitmq"
+        ],
+        "source_dest_check": true,
+        "spot_instance_request_id": "",
+        "subnet_id": "subnet-07095ec57966c08df",
+        "tags": {
+          "Name": "roboshop-dev-rabbitmq"
+        },
+        "tags_all": {
+          "Name": "roboshop-dev-rabbitmq"
+        },
+        "tenancy": "default",
+        "timeouts": null,
+        "user_data": null,
+        "user_data_base64": null,
+        "user_data_replace_on_change": false,
+        "volume_tags": null,
+        "vpc_security_group_ids": [
+          "sg-03456f4db42dccfe3",
+          "sg-03edfb1b334502c94"
+        ]
+      },
+      {
+        "ami": "ami-0055977a6e828a4f4",
+        "arn": "arn:aws:ec2:us-east-1:090072210120:instance/i-0e27b2d84f2dc3bf0",
+        "associate_public_ip_address": true,
+        "availability_zone": "us-east-1c",
+        "capacity_reservation_specification": [
+          {
+            "capacity_reservation_preference": "open",
+            "capacity_reservation_target": []
+          }
+        ],
+        "cpu_options": [
+          {
+            "amd_sev_snp": "",
+            "core_count": 1,
+            "nested_virtualization": "",
+            "threads_per_core": 2
+          }
+        ],
+        "credit_specification": [
+          {
+            "cpu_credits": "unlimited"
+          }
+        ],
+        "disable_api_stop": false,
+        "disable_api_termination": false,
+        "ebs_block_device": [],
+        "ebs_optimized": false,
+        "enable_primary_ipv6": null,
+        "enclave_options": [
+          {
+            "enabled": false
+          }
+        ],
+        "ephemeral_block_device": [],
+        "force_destroy": false,
+        "get_password_data": false,
+        "hibernation": false,
+        "host_id": "",
+        "host_resource_group_arn": null,
+        "iam_instance_profile": "",
+        "id": "i-0e27b2d84f2dc3bf0",
+        "instance_initiated_shutdown_behavior": "stop",
+        "instance_lifecycle": "",
+        "instance_market_options": [],
+        "instance_state": "running",
+        "instance_type": "t3.micro",
+        "ipv6_address_count": 0,
+        "ipv6_addresses": [],
+        "key_name": "",
+        "launch_template": [],
+        "maintenance_options": [
+          {
+            "auto_recovery": "default"
+          }
+        ],
+        "metadata_options": [
+          {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "optional",
+            "instance_metadata_tags": "disabled"
+          }
+        ],
+        "monitoring": false,
+        "network_interface": [],
+        "outpost_arn": "",
+        "password_data": "",
+        "placement_group": "",
+        "placement_group_id": "",
+        "placement_partition_number": 0,
+        "primary_network_interface": [
+          {
+            "delete_on_termination": true,
+            "network_interface_id": "eni-033f801f16d730ae2"
+          }
+        ],
+        "primary_network_interface_id": "eni-033f801f16d730ae2",
+        "private_dns": "ip-172-31-27-71.ec2.internal",
+        "private_dns_name_options": [
+          {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+          }
+        ],
+        "private_ip": "172.31.27.71",
+        "public_dns": "ec2-3-90-103-164.compute-1.amazonaws.com",
+        "public_ip": "3.90.103.164",
+        "region": "us-east-1",
+        "root_block_device": [
+          {
+            "delete_on_termination": true,
+            "device_name": "/dev/sda1",
+            "encrypted": false,
+            "iops": 3000,
+            "kms_key_id": "",
+            "tags": {},
+            "tags_all": {},
+            "throughput": 125,
+            "volume_id": "vol-0f744406d68d730e6",
+            "volume_size": 20,
+            "volume_type": "gp3"
+          }
+        ],
+        "secondary_network_interface": [],
+        "secondary_private_ips": [],
+        "security_groups": [
+          "roboshop-dev-catalogue",
+          "roboshop-dev-common"
+        ],
+        "source_dest_check": true,
+        "spot_instance_request_id": "",
+        "subnet_id": "subnet-07095ec57966c08df",
+        "tags": {
+          "Name": "roboshop-dev-catalogue"
+        },
+        "tags_all": {
+          "Name": "roboshop-dev-catalogue"
+        },
+        "tenancy": "default",
+        "timeouts": null,
+        "user_data": null,
+        "user_data_base64": null,
+        "user_data_replace_on_change": false,
+        "volume_tags": null,
+        "vpc_security_group_ids": [
+          "sg-03edfb1b334502c94",
+          "sg-0feb565db46121d72"
+        ]
+      },
+      {
+        "ami": "ami-0055977a6e828a4f4",
+        "arn": "arn:aws:ec2:us-east-1:090072210120:instance/i-09392c34a4570147f",
+        "associate_public_ip_address": true,
+        "availability_zone": "us-east-1c",
+        "capacity_reservation_specification": [
+          {
+            "capacity_reservation_preference": "open",
+            "capacity_reservation_target": []
+          }
+        ],
+        "cpu_options": [
+          {
+            "amd_sev_snp": "",
+            "core_count": 1,
+            "nested_virtualization": "",
+            "threads_per_core": 2
+          }
+        ],
+        "credit_specification": [
+          {
+            "cpu_credits": "unlimited"
+          }
+        ],
+        "disable_api_stop": false,
+        "disable_api_termination": false,
+        "ebs_block_device": [],
+        "ebs_optimized": false,
+        "enable_primary_ipv6": null,
+        "enclave_options": [
+          {
+            "enabled": false
+          }
+        ],
+        "ephemeral_block_device": [],
+        "force_destroy": false,
+        "get_password_data": false,
+        "hibernation": false,
+        "host_id": "",
+        "host_resource_group_arn": null,
+        "iam_instance_profile": "",
+        "id": "i-09392c34a4570147f",
+        "instance_initiated_shutdown_behavior": "stop",
+        "instance_lifecycle": "",
+        "instance_market_options": [],
+        "instance_state": "running",
+        "instance_type": "t3.micro",
+        "ipv6_address_count": 0,
+        "ipv6_addresses": [],
+        "key_name": "",
+        "launch_template": [],
+        "maintenance_options": [
+          {
+            "auto_recovery": "default"
+          }
+        ],
+        "metadata_options": [
+          {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "optional",
+            "instance_metadata_tags": "disabled"
+          }
+        ],
+        "monitoring": false,
+        "network_interface": [],
+        "outpost_arn": "",
+        "password_data": "",
+        "placement_group": "",
+        "placement_group_id": "",
+        "placement_partition_number": 0,
+        "primary_network_interface": [
+          {
+            "delete_on_termination": true,
+            "network_interface_id": "eni-05d811b6d26fe9efe"
+          }
+        ],
+        "primary_network_interface_id": "eni-05d811b6d26fe9efe",
+        "private_dns": "ip-172-31-29-76.ec2.internal",
+        "private_dns_name_options": [
+          {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+          }
+        ],
+        "private_ip": "172.31.29.76",
+        "public_dns": "ec2-54-82-80-226.compute-1.amazonaws.com",
+        "public_ip": "54.82.80.226",
+        "region": "us-east-1",
+        "root_block_device": [
+          {
+            "delete_on_termination": true,
+            "device_name": "/dev/sda1",
+            "encrypted": false,
+            "iops": 3000,
+            "kms_key_id": "",
+            "tags": {},
+            "tags_all": {},
+            "throughput": 125,
+            "volume_id": "vol-0e995afea081a2f13",
+            "volume_size": 20,
+            "volume_type": "gp3"
+          }
+        ],
+        "secondary_network_interface": [],
+        "secondary_private_ips": [],
+        "security_groups": [
+          "roboshop-dev-common",
+          "roboshop-dev-user"
+        ],
+        "source_dest_check": true,
+        "spot_instance_request_id": "",
+        "subnet_id": "subnet-07095ec57966c08df",
+        "tags": {
+          "Name": "roboshop-dev-user"
+        },
+        "tags_all": {
+          "Name": "roboshop-dev-user"
+        },
+        "tenancy": "default",
+        "timeouts": null,
+        "user_data": null,
+        "user_data_base64": null,
+        "user_data_replace_on_change": false,
+        "volume_tags": null,
+        "vpc_security_group_ids": [
+          "sg-03edfb1b334502c94",
+          "sg-08f2fbf88b3910eb7"
+        ]
+      },
+      {
+        "ami": "ami-0055977a6e828a4f4",
+        "arn": "arn:aws:ec2:us-east-1:090072210120:instance/i-052aff305ea9ecaaf",
+        "associate_public_ip_address": true,
+        "availability_zone": "us-east-1c",
+        "capacity_reservation_specification": [
+          {
+            "capacity_reservation_preference": "open",
+            "capacity_reservation_target": []
+          }
+        ],
+        "cpu_options": [
+          {
+            "amd_sev_snp": "",
+            "core_count": 1,
+            "nested_virtualization": "",
+            "threads_per_core": 2
+          }
+        ],
+        "credit_specification": [
+          {
+            "cpu_credits": "unlimited"
+          }
+        ],
+        "disable_api_stop": false,
+        "disable_api_termination": false,
+        "ebs_block_device": [],
+        "ebs_optimized": false,
+        "enable_primary_ipv6": null,
+        "enclave_options": [
+          {
+            "enabled": false
+          }
+        ],
+        "ephemeral_block_device": [],
+        "force_destroy": false,
+        "get_password_data": false,
+        "hibernation": false,
+        "host_id": "",
+        "host_resource_group_arn": null,
+        "iam_instance_profile": "",
+        "id": "i-052aff305ea9ecaaf",
+        "instance_initiated_shutdown_behavior": "stop",
+        "instance_lifecycle": "",
+        "instance_market_options": [],
+        "instance_state": "running",
+        "instance_type": "t3.micro",
+        "ipv6_address_count": 0,
+        "ipv6_addresses": [],
+        "key_name": "",
+        "launch_template": [],
+        "maintenance_options": [
+          {
+            "auto_recovery": "default"
+          }
+        ],
+        "metadata_options": [
+          {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "optional",
+            "instance_metadata_tags": "disabled"
+          }
+        ],
+        "monitoring": false,
+        "network_interface": [],
+        "outpost_arn": "",
+        "password_data": "",
+        "placement_group": "",
+        "placement_group_id": "",
+        "placement_partition_number": 0,
+        "primary_network_interface": [
+          {
+            "delete_on_termination": true,
+            "network_interface_id": "eni-0cd4056742c96514f"
+          }
+        ],
+        "primary_network_interface_id": "eni-0cd4056742c96514f",
+        "private_dns": "ip-172-31-30-68.ec2.internal",
+        "private_dns_name_options": [
+          {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+          }
+        ],
+        "private_ip": "172.31.30.68",
+        "public_dns": "ec2-98-84-125-201.compute-1.amazonaws.com",
+        "public_ip": "98.84.125.201",
+        "region": "us-east-1",
+        "root_block_device": [
+          {
+            "delete_on_termination": true,
+            "device_name": "/dev/sda1",
+            "encrypted": false,
+            "iops": 3000,
+            "kms_key_id": "",
+            "tags": {},
+            "tags_all": {},
+            "throughput": 125,
+            "volume_id": "vol-08aa96a82dbe8c4dc",
+            "volume_size": 20,
+            "volume_type": "gp3"
+          }
+        ],
+        "secondary_network_interface": [],
+        "secondary_private_ips": [],
+        "security_groups": [
+          "roboshop-dev-cart",
+          "roboshop-dev-common"
+        ],
+        "source_dest_check": true,
+        "spot_instance_request_id": "",
+        "subnet_id": "subnet-07095ec57966c08df",
+        "tags": {
+          "Name": "roboshop-dev-cart"
+        },
+        "tags_all": {
+          "Name": "roboshop-dev-cart"
+        },
+        "tenancy": "default",
+        "timeouts": null,
+        "user_data": null,
+        "user_data_base64": null,
+        "user_data_replace_on_change": false,
+        "volume_tags": null,
+        "vpc_security_group_ids": [
+          "sg-03edfb1b334502c94",
+          "sg-0fdc0005e7f2ec7f0"
+        ]
+      },
+      {
+        "ami": "ami-0055977a6e828a4f4",
+        "arn": "arn:aws:ec2:us-east-1:090072210120:instance/i-090cd0ba4cd6800e4",
+        "associate_public_ip_address": true,
+        "availability_zone": "us-east-1c",
+        "capacity_reservation_specification": [
+          {
+            "capacity_reservation_preference": "open",
+            "capacity_reservation_target": []
+          }
+        ],
+        "cpu_options": [
+          {
+            "amd_sev_snp": "",
+            "core_count": 1,
+            "nested_virtualization": "",
+            "threads_per_core": 2
+          }
+        ],
+        "credit_specification": [
+          {
+            "cpu_credits": "unlimited"
+          }
+        ],
+        "disable_api_stop": false,
+        "disable_api_termination": false,
+        "ebs_block_device": [],
+        "ebs_optimized": false,
+        "enable_primary_ipv6": null,
+        "enclave_options": [
+          {
+            "enabled": false
+          }
+        ],
+        "ephemeral_block_device": [],
+        "force_destroy": false,
+        "get_password_data": false,
+        "hibernation": false,
+        "host_id": "",
+        "host_resource_group_arn": null,
+        "iam_instance_profile": "",
+        "id": "i-090cd0ba4cd6800e4",
+        "instance_initiated_shutdown_behavior": "stop",
+        "instance_lifecycle": "",
+        "instance_market_options": [],
+        "instance_state": "running",
+        "instance_type": "t3.micro",
+        "ipv6_address_count": 0,
+        "ipv6_addresses": [],
+        "key_name": "",
+        "launch_template": [],
+        "maintenance_options": [
+          {
+            "auto_recovery": "default"
+          }
+        ],
+        "metadata_options": [
+          {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "optional",
+            "instance_metadata_tags": "disabled"
+          }
+        ],
+        "monitoring": false,
+        "network_interface": [],
+        "outpost_arn": "",
+        "password_data": "",
+        "placement_group": "",
+        "placement_group_id": "",
+        "placement_partition_number": 0,
+        "primary_network_interface": [
+          {
+            "delete_on_termination": true,
+            "network_interface_id": "eni-03f9750f2e02d8b70"
+          }
+        ],
+        "primary_network_interface_id": "eni-03f9750f2e02d8b70",
+        "private_dns": "ip-172-31-31-231.ec2.internal",
+        "private_dns_name_options": [
+          {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+          }
+        ],
+        "private_ip": "172.31.31.231",
+        "public_dns": "ec2-107-23-139-187.compute-1.amazonaws.com",
+        "public_ip": "107.23.139.187",
+        "region": "us-east-1",
+        "root_block_device": [
+          {
+            "delete_on_termination": true,
+            "device_name": "/dev/sda1",
+            "encrypted": false,
+            "iops": 3000,
+            "kms_key_id": "",
+            "tags": {},
+            "tags_all": {},
+            "throughput": 125,
+            "volume_id": "vol-0a49d0e87631c851e",
+            "volume_size": 20,
+            "volume_type": "gp3"
+          }
+        ],
+        "secondary_network_interface": [],
+        "secondary_private_ips": [],
+        "security_groups": [
+          "roboshop-dev-common",
+          "roboshop-dev-shipping"
+        ],
+        "source_dest_check": true,
+        "spot_instance_request_id": "",
+        "subnet_id": "subnet-07095ec57966c08df",
+        "tags": {
+          "Name": "roboshop-dev-shipping"
+        },
+        "tags_all": {
+          "Name": "roboshop-dev-shipping"
+        },
+        "tenancy": "default",
+        "timeouts": null,
+        "user_data": null,
+        "user_data_base64": null,
+        "user_data_replace_on_change": false,
+        "volume_tags": null,
+        "vpc_security_group_ids": [
+          "sg-03edfb1b334502c94",
+          "sg-08b2c0b94e8d1d6f0"
+        ]
+      },
+      {
+        "ami": "ami-0055977a6e828a4f4",
+        "arn": "arn:aws:ec2:us-east-1:090072210120:instance/i-0c814be4e4634374f",
+        "associate_public_ip_address": true,
+        "availability_zone": "us-east-1c",
+        "capacity_reservation_specification": [
+          {
+            "capacity_reservation_preference": "open",
+            "capacity_reservation_target": []
+          }
+        ],
+        "cpu_options": [
+          {
+            "amd_sev_snp": "",
+            "core_count": 1,
+            "nested_virtualization": "",
+            "threads_per_core": 2
+          }
+        ],
+        "credit_specification": [
+          {
+            "cpu_credits": "unlimited"
+          }
+        ],
+        "disable_api_stop": false,
+        "disable_api_termination": false,
+        "ebs_block_device": [],
+        "ebs_optimized": false,
+        "enable_primary_ipv6": null,
+        "enclave_options": [
+          {
+            "enabled": false
+          }
+        ],
+        "ephemeral_block_device": [],
+        "force_destroy": false,
+        "get_password_data": false,
+        "hibernation": false,
+        "host_id": "",
+        "host_resource_group_arn": null,
+        "iam_instance_profile": "",
+        "id": "i-0c814be4e4634374f",
+        "instance_initiated_shutdown_behavior": "stop",
+        "instance_lifecycle": "",
+        "instance_market_options": [],
+        "instance_state": "running",
+        "instance_type": "t3.micro",
+        "ipv6_address_count": 0,
+        "ipv6_addresses": [],
+        "key_name": "",
+        "launch_template": [],
+        "maintenance_options": [
+          {
+            "auto_recovery": "default"
+          }
+        ],
+        "metadata_options": [
+          {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "optional",
+            "instance_metadata_tags": "disabled"
+          }
+        ],
+        "monitoring": false,
+        "network_interface": [],
+        "outpost_arn": "",
+        "password_data": "",
+        "placement_group": "",
+        "placement_group_id": "",
+        "placement_partition_number": 0,
+        "primary_network_interface": [
+          {
+            "delete_on_termination": true,
+            "network_interface_id": "eni-01eea4654670d0d6b"
+          }
+        ],
+        "primary_network_interface_id": "eni-01eea4654670d0d6b",
+        "private_dns": "ip-172-31-24-4.ec2.internal",
+        "private_dns_name_options": [
+          {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+          }
+        ],
+        "private_ip": "172.31.24.4",
+        "public_dns": "ec2-52-23-203-206.compute-1.amazonaws.com",
+        "public_ip": "52.23.203.206",
+        "region": "us-east-1",
+        "root_block_device": [
+          {
+            "delete_on_termination": true,
+            "device_name": "/dev/sda1",
+            "encrypted": false,
+            "iops": 3000,
+            "kms_key_id": "",
+            "tags": {},
+            "tags_all": {},
+            "throughput": 125,
+            "volume_id": "vol-0b0a3711a42621348",
+            "volume_size": 20,
+            "volume_type": "gp3"
+          }
+        ],
+        "secondary_network_interface": [],
+        "secondary_private_ips": [],
+        "security_groups": [
+          "roboshop-dev-common",
+          "roboshop-dev-payment"
+        ],
+        "source_dest_check": true,
+        "spot_instance_request_id": "",
+        "subnet_id": "subnet-07095ec57966c08df",
+        "tags": {
+          "Name": "roboshop-dev-payment"
+        },
+        "tags_all": {
+          "Name": "roboshop-dev-payment"
+        },
+        "tenancy": "default",
+        "timeouts": null,
+        "user_data": null,
+        "user_data_base64": null,
+        "user_data_replace_on_change": false,
+        "volume_tags": null,
+        "vpc_security_group_ids": [
+          "sg-0278ec395d65c4c07",
+          "sg-03edfb1b334502c94"
+        ]
+      },
+      {
+        "ami": "ami-0055977a6e828a4f4",
+        "arn": "arn:aws:ec2:us-east-1:090072210120:instance/i-0c50a4d1593b08d1e",
+        "associate_public_ip_address": true,
+        "availability_zone": "us-east-1c",
+        "capacity_reservation_specification": [
+          {
+            "capacity_reservation_preference": "open",
+            "capacity_reservation_target": []
+          }
+        ],
+        "cpu_options": [
+          {
+            "amd_sev_snp": "",
+            "core_count": 1,
+            "nested_virtualization": "",
+            "threads_per_core": 2
+          }
+        ],
+        "credit_specification": [
+          {
+            "cpu_credits": "unlimited"
+          }
+        ],
+        "disable_api_stop": false,
+        "disable_api_termination": false,
+        "ebs_block_device": [],
+        "ebs_optimized": false,
+        "enable_primary_ipv6": null,
+        "enclave_options": [
+          {
+            "enabled": false
+          }
+        ],
+        "ephemeral_block_device": [],
+        "force_destroy": false,
+        "get_password_data": false,
+        "hibernation": false,
+        "host_id": "",
+        "host_resource_group_arn": null,
+        "iam_instance_profile": "",
+        "id": "i-0c50a4d1593b08d1e",
+        "instance_initiated_shutdown_behavior": "stop",
+        "instance_lifecycle": "",
+        "instance_market_options": [],
+        "instance_state": "running",
+        "instance_type": "t3.micro",
+        "ipv6_address_count": 0,
+        "ipv6_addresses": [],
+        "key_name": "",
+        "launch_template": [],
+        "maintenance_options": [
+          {
+            "auto_recovery": "default"
+          }
+        ],
+        "metadata_options": [
+          {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "optional",
+            "instance_metadata_tags": "disabled"
+          }
+        ],
+        "monitoring": false,
+        "network_interface": [],
+        "outpost_arn": "",
+        "password_data": "",
+        "placement_group": "",
+        "placement_group_id": "",
+        "placement_partition_number": 0,
+        "primary_network_interface": [
+          {
+            "delete_on_termination": true,
+            "network_interface_id": "eni-0bc4cbe70f496aeeb"
+          }
+        ],
+        "primary_network_interface_id": "eni-0bc4cbe70f496aeeb",
+        "private_dns": "ip-172-31-24-124.ec2.internal",
+        "private_dns_name_options": [
+          {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+          }
+        ],
+        "private_ip": "172.31.24.124",
+        "public_dns": "ec2-184-73-132-188.compute-1.amazonaws.com",
+        "public_ip": "184.73.132.188",
+        "region": "us-east-1",
+        "root_block_device": [
+          {
+            "delete_on_termination": true,
+            "device_name": "/dev/sda1",
+            "encrypted": false,
+            "iops": 3000,
+            "kms_key_id": "",
+            "tags": {},
+            "tags_all": {},
+            "throughput": 125,
+            "volume_id": "vol-05946909772d04e5c",
+            "volume_size": 20,
+            "volume_type": "gp3"
+          }
+        ],
+        "secondary_network_interface": [],
+        "secondary_private_ips": [],
+        "security_groups": [
+          "roboshop-dev-common",
+          "roboshop-dev-frontend"
+        ],
+        "source_dest_check": true,
+        "spot_instance_request_id": "",
+        "subnet_id": "subnet-07095ec57966c08df",
+        "tags": {
+          "Name": "roboshop-dev-frontend"
+        },
+        "tags_all": {
+          "Name": "roboshop-dev-frontend"
+        },
+        "tenancy": "default",
+        "timeouts": null,
+        "user_data": null,
+        "user_data_base64": null,
+        "user_data_replace_on_change": false,
+        "volume_tags": null,
+        "vpc_security_group_ids": [
+          "sg-03edfb1b334502c94",
+          "sg-07ab8800ad0db63dc"
+        ]
+      }
+    ]
+  }
+}

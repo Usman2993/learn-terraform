@@ -34,5 +34,5 @@ variable "cidr" {
 
 variable "from_port" {
     type = number
-    default = 0
+    # default = 0
 }
